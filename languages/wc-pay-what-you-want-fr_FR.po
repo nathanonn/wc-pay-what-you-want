@@ -1,0 +1,45 @@
+# WC Pay What You Want — French (France) test fixture
+# Copyright (C) 2026 WC Pay What You Want
+# This file is distributed under the same license as the WC Pay What You Want package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Pay What You Want 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com\n"
+"POT-Creation-Date: 2026-02-26T00:00:00+00:00\n"
+"PO-Revision-Date: 2026-02-26T00:00:00+00:00\n"
+"Last-Translator: Test Translator <test@example.com>\n"
+"Language-Team: French\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Manual\n"
+"X-Domain: wc-pay-what-you-want\n"
+
+msgid "Pay What You Want"
+msgstr "Payer ce que vous voulez"
+
+msgid "Enable Pay What You Want"
+msgstr "Activer Payer ce que vous voulez"
+
+msgid "Name Your Price"
+msgstr "Nommez votre prix"
+
+msgid "Suggested: %s"
+msgstr "Suggéré\xc2\xa0: %s"
+
+msgid "Pay between %1$s and %2$s"
+msgstr "Payez entre %1$s et %2$s"
+
+msgid "Please enter a valid price."
+msgstr "Veuillez entrer un prix valide."
+
+msgid "Please enter at least %s."
+msgstr "Veuillez entrer au moins %s."
+
+msgid "Please enter no more than %s."
+msgstr "Veuillez entrer au maximum %s."
+
+msgid "Custom"
+msgstr "Personnalisé"

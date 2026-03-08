@@ -1,0 +1,221 @@
+/* WC Pay What You Want — Frontend Styles */
+
+/* =========================================================
+   Section Container
+   ========================================================= */
+
+.wcpwyw-section {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/* =========================================================
+   Heading
+   ========================================================= */
+
+.wcpwyw-heading {
+	font-size: 1.1em;
+	margin: 0 0 0.4em;
+}
+
+/* =========================================================
+   Suggested Price Label
+   ========================================================= */
+
+.wcpwyw-suggested {
+	margin: 0.25em 0 0.5em;
+	font-size: 0.95em;
+	color: #555;
+}
+
+/* =========================================================
+   Last Price Note
+   ========================================================= */
+
+.wcpwyw-last-price-note {
+	font-size: 0.9em;
+	color: #555;
+	margin: 0.25em 0 0.5em;
+}
+
+/* =========================================================
+   Preset Buttons
+   ========================================================= */
+
+.wcpwyw-presets {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	margin: 0.5em 0;
+}
+
+.wcpwyw-preset-btn {
+	cursor: pointer;
+	padding: 0.4em 0.8em;
+	border: 1px solid #888;
+	border-radius: 4px;
+	background: transparent;
+	font-size: inherit;
+	font-family: inherit;
+	line-height: 1.4;
+	color: inherit;
+	transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.wcpwyw-preset-btn:hover {
+	border-color: #555;
+}
+
+.wcpwyw-preset-btn--active {
+	background: #333;
+	color: #fff;
+	border-color: #333;
+}
+
+/* =========================================================
+   Price Input
+   ========================================================= */
+
+.wcpwyw-input-wrap {
+	display: flex;
+	align-items: center;
+	gap: 0.25em;
+	margin: 0.5em 0;
+}
+
+.wcpwyw-currency-symbol {
+	font-size: inherit;
+	white-space: nowrap;
+	line-height: 1;
+}
+
+.wcpwyw-price-input {
+	width: 8em;
+	padding: 0.4em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: inherit;
+	font-family: inherit;
+	-moz-appearance: textfield;
+}
+
+.wcpwyw-price-input::-webkit-outer-spin-button,
+.wcpwyw-price-input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Error state */
+.wcpwyw-input-wrap--error .wcpwyw-price-input {
+	border-color: #c00;
+	box-shadow: 0 0 0 1px #c00;
+	outline: none;
+}
+
+/* =========================================================
+   Error Message
+   ========================================================= */
+
+.wcpwyw-error {
+	color: #c00;
+	font-size: 0.9em;
+	margin-top: 0.25em;
+	margin-bottom: 0;
+}
+
+/* =========================================================
+   Boundary Label
+   ========================================================= */
+
+.wcpwyw-boundary {
+	font-size: 0.9em;
+	color: #555;
+	margin: 0.5em 0;
+}
+
+/* =========================================================
+   Display Style Variants
+   ========================================================= */
+
+/* Style B — strikethrough regular price */
+.wcpwyw-style-b .wcpwyw-regular-price del {
+	text-decoration: line-through;
+	opacity: 0.6;
+}
+
+.wcpwyw-style-b .wcpwyw-regular-price {
+	margin: 0 0 0.5em;
+}
+
+/* Style C — reference label */
+.wcpwyw-style-c .wcpwyw-regular-price {
+	font-size: 0.9em;
+	color: #666;
+	margin: 0 0 0.5em;
+}
+
+/* Style D — boundary label at top (before heading) */
+.wcpwyw-style-d .wcpwyw-boundary:first-child {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+/* =========================================================
+   Loading State (variable product AJAX)
+   ========================================================= */
+
+.wcpwyw-section--loading .wcpwyw-presets,
+.wcpwyw-section--loading .wcpwyw-input-wrap,
+.wcpwyw-section--loading .wcpwyw-boundary {
+	opacity: 0.4;
+	pointer-events: none;
+	transition: opacity 0.2s;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 480px) {
+	.wcpwyw-input-wrap {
+		flex-wrap: wrap;
+	}
+
+	.wcpwyw-price-input {
+		width: 100%;
+	}
+}
+
+/* =========================================================
+   RTL Support
+   ========================================================= */
+
+/* Price input wrapper: inherit text direction from document */
+.wcpwyw-price-wrap {
+	direction: inherit;
+	text-align: inherit;
+}
+
+/* In RTL: flex containers reverse direction */
+[dir="rtl"] .wcpwyw-price-wrap {
+	direction: rtl;
+}
+
+/* Preset button row: reverse flex order in RTL */
+[dir="rtl"] .wcpwyw-preset-buttons {
+	flex-direction: row-reverse;
+}
+
+/* Boundary labels: right-align in RTL */
+[dir="rtl"] .wcpwyw-price-boundaries {
+	text-align: right;
+}
+
+/* Price input: right-aligned text cursor in RTL */
+[dir="rtl"] .wcpwyw-price-input {
+	text-align: right;
+	direction: rtl;
+}
+
+/* Currency symbol position: delegated to wc_price() — no CSS override needed */

@@ -1,0 +1,17 @@
+{
+    "name": "your-vendor/wc-pay-what-you-want",
+    "description": "Pay What You Want plugin for WooCommerce that allows customers to choose their own price for products.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WcPwyw\\": "inc/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

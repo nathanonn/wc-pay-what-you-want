@@ -1,0 +1,145 @@
+/* WC Pay What You Want — Uninstall Confirmation Page Styles */
+
+.wcpwyw-uninstall-page h1 {
+	margin-bottom: 1em;
+}
+
+/* =========================================================
+   Data Inventory Panel
+   ========================================================= */
+
+.wcpwyw-uninstall__inventory {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 1.2em 1.5em;
+	margin-bottom: 1.5em;
+	max-width: 580px;
+}
+
+.wcpwyw-uninstall__inventory h2 {
+	margin: 0 0 0.75em;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+/* =========================================================
+   Options Panel
+   ========================================================= */
+
+.wcpwyw-uninstall__options {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 1.2em 1.5em;
+	max-width: 580px;
+	margin-bottom: 1.5em;
+}
+
+.wcpwyw-uninstall__options h2 {
+	margin: 0 0 0.75em;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+/* =========================================================
+   Radio Option Blocks
+   ========================================================= */
+
+.wcpwyw-uninstall__radio-label {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75em;
+	padding: 0.75em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 0.75em;
+	cursor: pointer;
+	transition: border-color 0.15s, background 0.15s;
+}
+
+.wcpwyw-uninstall__radio-label:hover {
+	border-color: #0073aa;
+	background: #f5f9fc;
+}
+
+.wcpwyw-uninstall__radio-label input[type="radio"] {
+	margin-top: 3px;
+	flex-shrink: 0;
+}
+
+.wcpwyw-uninstall__radio-text .description {
+	display: block;
+	margin-top: 0.25em;
+	color: #666;
+}
+
+/* =========================================================
+   Delete Sub-Panel
+   ========================================================= */
+
+.wcpwyw-uninstall__delete-panel {
+	background: #fff8f0;
+	border: 1px solid #f0c040;
+	border-radius: 4px;
+	padding: 1em;
+	margin-top: 0.5em;
+}
+
+.wcpwyw-uninstall__checkbox-label {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5em;
+	margin-bottom: 0.75em;
+	cursor: pointer;
+}
+
+.wcpwyw-uninstall__checkbox-label input[type="checkbox"] {
+	margin-top: 3px;
+	flex-shrink: 0;
+}
+
+.wcpwyw-uninstall__affected-list {
+	border-top: 1px solid #f0c040;
+	padding-top: 0.75em;
+	margin-top: 0.5em;
+}
+
+.wcpwyw-uninstall__affected-list p {
+	margin: 0 0 0.5em;
+}
+
+.wcpwyw-uninstall__affected-list ul {
+	margin: 0;
+	padding-left: 1.4em;
+}
+
+.wcpwyw-uninstall__affected-list li {
+	margin-bottom: 0.25em;
+	color: #555;
+}
+
+/* =========================================================
+   Action Button Row
+   ========================================================= */
+
+.wcpwyw-uninstall__actions {
+	display: flex;
+	gap: 0.75em;
+	align-items: center;
+	margin-top: 1.5em;
+}
+
+.wcpwyw-uninstall__actions .button-primary {
+	background-color: #c0392b;
+	border-color: #a93226;
+	color: #fff;
+	box-shadow: 0 1px 0 #a93226;
+}
+
+.wcpwyw-uninstall__actions .button-primary:hover,
+.wcpwyw-uninstall__actions .button-primary:focus {
+	background-color: #a93226;
+	border-color: #922b21;
+	color: #fff;
+}

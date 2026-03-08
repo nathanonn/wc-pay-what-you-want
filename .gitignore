@@ -1,0 +1,22 @@
+# Dependencies
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Composer
+composer.lock
+
+# Build artifacts
+*.zip
+
+# Node (if added later)
+node_modules/

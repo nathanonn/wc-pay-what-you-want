@@ -1,0 +1,257 @@
+/* =============================================================================
+   WCPWYW Dashboard Widget — admin-analytics.css
+   ============================================================================= */
+
+/* Tab strip */
+.wcpwyw-widget__tabs {
+	display: flex;
+	gap: 4px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+}
+
+.wcpwyw-widget__tab {
+	background: none;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 4px 10px;
+	cursor: pointer;
+	font-size: 12px;
+	color: #555;
+	line-height: 1.4;
+}
+
+.wcpwyw-widget__tab:hover {
+	background: #f0f0f0;
+	color: #333;
+}
+
+.wcpwyw-widget__tab--active {
+	background: #7f54b3;
+	border-color: #7f54b3;
+	color: #fff;
+}
+
+.wcpwyw-widget__tab:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* Metric cards */
+.wcpwyw-widget__cards {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 14px;
+}
+
+.wcpwyw-widget__card {
+	flex: 1;
+	background: #f8f8f8;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding: 10px 12px;
+	min-width: 0;
+}
+
+.wcpwyw-widget__card-label {
+	font-size: 11px;
+	color: #777;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	margin-bottom: 4px;
+}
+
+.wcpwyw-widget__card-value {
+	font-size: 20px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1.2;
+	margin-bottom: 2px;
+}
+
+.wcpwyw-widget__card-period {
+	font-size: 11px;
+	color: #999;
+}
+
+/* Avg vs Suggested deviation row */
+.wcpwyw-widget__avg-deviation {
+	font-size: 13px;
+	font-weight: 500;
+	padding: 6px 10px;
+	border-radius: 3px;
+	margin-bottom: 14px;
+}
+
+.wcpwyw-widget__deviation--above {
+	background: #e8f5e9;
+	color: #2e7d32;
+}
+
+.wcpwyw-widget__deviation--below {
+	background: #ffebee;
+	color: #c62828;
+}
+
+/* Price distribution */
+.wcpwyw-widget__distribution h4 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #777;
+	margin: 0 0 8px;
+	letter-spacing: 0.04em;
+}
+
+.wcpwyw-widget__dist-row {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+.wcpwyw-widget__dist-label {
+	width: 100px;
+	flex-shrink: 0;
+	color: #555;
+}
+
+.wcpwyw-widget__dist-bar-wrap {
+	flex: 1;
+	background: #e8e8e8;
+	border-radius: 2px;
+	height: 8px;
+	overflow: hidden;
+}
+
+.wcpwyw-widget__dist-bar {
+	height: 100%;
+	background: #7f54b3;
+	border-radius: 2px;
+	transition: width 0.3s ease;
+}
+
+.wcpwyw-widget__dist-pct {
+	width: 32px;
+	text-align: right;
+	color: #333;
+	font-weight: 500;
+}
+
+.wcpwyw-widget__dist-count {
+	width: 36px;
+	color: #999;
+}
+
+/* Top 5 products */
+.wcpwyw-widget__top5 {
+	margin-top: 14px;
+}
+
+.wcpwyw-widget__top5 h4 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #777;
+	margin: 0 0 8px;
+	letter-spacing: 0.04em;
+}
+
+.wcpwyw-widget__top5-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+.wcpwyw-widget__top5-table th {
+	text-align: left;
+	color: #777;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 4px 6px;
+	font-weight: 600;
+}
+
+.wcpwyw-widget__top5-table td {
+	padding: 5px 6px;
+	border-bottom: 1px solid #f0f0f0;
+	color: #333;
+}
+
+.wcpwyw-widget__top5-table tr:last-child td {
+	border-bottom: none;
+}
+
+.wcpwyw-widget__top5-table a {
+	color: #2271b1;
+	text-decoration: none;
+}
+
+.wcpwyw-widget__top5-table a:hover {
+	color: #135e96;
+	text-decoration: underline;
+}
+
+/* Empty state */
+.wcpwyw-widget__empty {
+	text-align: center;
+	padding: 20px 10px;
+	color: #777;
+}
+
+.wcpwyw-widget__empty p {
+	margin-bottom: 8px;
+	font-size: 13px;
+}
+
+/* Error state */
+.wcpwyw-widget__error {
+	text-align: center;
+	padding: 16px 10px;
+	color: #c62828;
+}
+
+.wcpwyw-widget__error p {
+	margin-bottom: 10px;
+}
+
+/* Skeleton loading */
+.wcpwyw-widget__skeleton {
+	display: none;
+}
+
+.wcpwyw-widget__skeleton--visible {
+	display: block;
+}
+
+.wcpwyw-widget__skeleton-cards {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 12px;
+}
+
+.wcpwyw-widget__skeleton-card {
+	flex: 1;
+	height: 72px;
+	border-radius: 4px;
+	background: linear-gradient(90deg, #e8e8e8 25%, #f4f4f4 50%, #e8e8e8 75%);
+	background-size: 200% 100%;
+	animation: wcpwyw-shimmer 1.5s infinite;
+}
+
+.wcpwyw-widget__skeleton-row {
+	height: 14px;
+	border-radius: 3px;
+	margin-bottom: 8px;
+	background: linear-gradient(90deg, #e8e8e8 25%, #f4f4f4 50%, #e8e8e8 75%);
+	background-size: 200% 100%;
+	animation: wcpwyw-shimmer 1.5s infinite;
+}
+
+.wcpwyw-widget__skeleton-row--short {
+	width: 60%;
+}
+
+@keyframes wcpwyw-shimmer {
+	0%   { background-position: 200% 0; }
+	100% { background-position: -200% 0; }
+}

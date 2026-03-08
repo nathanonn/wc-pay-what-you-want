@@ -1,0 +1,185 @@
+/* -----------------------------------------------------------------------
+   WC Pay What You Want — Admin Styles
+   All form field selectors scoped under .wcpwyw_admin-layout for CSS specificity
+   ----------------------------------------------------------------------- */
+
+/* PWYW Status Badges (Products list column) */
+.wcpwyw-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+
+.wcpwyw-badge-on {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.wcpwyw-badge-off {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    border: 1px solid #e5e7eb;
+}
+
+.wcpwyw-badge-variable {
+    color: #6b7280;
+}
+
+/* Product Panel — variation heading */
+.wcpwyw_admin-layout .wcpwyw-variation-heading {
+    font-weight: 600;
+    margin: 12px 0 6px;
+    border-top: 1px dashed #ddd;
+    padding-top: 10px;
+    color: #555;
+}
+
+/* Variation mode radio fieldset */
+.wcpwyw_admin-layout .wcpwyw-variation-mode-fieldset {
+    border: none;
+    margin: 0 0 8px;
+    padding: 0;
+}
+
+.wcpwyw_admin-layout .wcpwyw-radio-label {
+    display: block;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+/* Helper text states */
+.wcpwyw_admin-layout .wcpwyw-field-hint {
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.wcpwyw_admin-layout .wcpwyw-using-global {
+    color: #2271b1;
+}
+
+.wcpwyw_admin-layout .wcpwyw-override-active {
+    color: #d63638;
+}
+
+/* Variation / product notice info boxes */
+.wcpwyw_admin-layout .wcpwyw-variation-notice,
+.wcpwyw_admin-layout .wcpwyw-inherit-info,
+.wcpwyw_admin-layout .wcpwyw-disable-info {
+    background: #f0f6fc;
+    border-left: 4px solid #2271b1;
+    padding: 8px 12px;
+    margin: 8px 0;
+    color: #1d2327;
+}
+
+/* Email alert fields hidden by default — JS hides the parent <tr> on page load */
+/* NOTE: The class wcpwyw-email-alert-field is on the <input> inside the <tr>.
+   JS targets .wcpwyw-email-alert-field.closest('tr') to hide/show the row.
+   No CSS display:none here — JS handles initial hide and toggle. */
+
+/* Disabled state notice (product panel) */
+.wcpwyw_admin-layout .wcpwyw-disabled-notice {
+    padding: 8px 12px;
+    margin: 8px 0;
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* Preset preview buttons (settings tab live preview) */
+.wcpwyw-preset-preview {
+    margin-top: 6px;
+}
+
+.wcpwyw-preview-btn {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 2px;
+    background: #f0f6fc;
+    border: 1px solid #2271b1;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #2271b1;
+}
+
+/* -----------------------------------------------
+   PWYW Order Detail Panel (Phase 04)
+----------------------------------------------- */
+.wcpwyw-order-panel {
+    margin: 6px 0 4px 0;
+    padding: 8px 10px;
+    background: #f9f9f9;
+    border-left: 3px solid #7f54b3;
+    border-radius: 2px;
+    font-size: 0.85em;
+}
+
+.wcpwyw-order-panel__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.wcpwyw-order-panel__table td {
+    padding: 2px 6px 2px 0;
+    vertical-align: middle;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.wcpwyw-order-panel__label {
+    color: #777;
+    white-space: nowrap;
+    width: 35%;
+}
+
+.wcpwyw-order-panel__value {
+    font-weight: 600;
+    color: #23282d;
+}
+
+.wcpwyw-order-panel__variance--above {
+    color: #2e7d32;
+}
+
+.wcpwyw-order-panel__variance--below {
+    color: #c62828;
+}
+
+/* -----------------------------------------------
+   PWYW Orders List Column Styles (Phase 05)
+----------------------------------------------- */
+.wcpwyw-col-yes {
+    color: #2e7d32;
+    font-weight: 600;
+}
+.wcpwyw-col-no {
+    color: #888;
+    font-weight: 400;
+}
+.wcpwyw-col-mixed {
+    color: #e65100;
+    font-weight: 600;
+    cursor: help;
+    border-bottom: 1px dotted currentColor;
+}
+.wcpwyw-col-dash {
+    color: #bbb;
+}
+.wcpwyw-col-deviation--above {
+    color: #2e7d32;
+}
+.wcpwyw-col-deviation--below {
+    color: #c62828;
+}
+.wcpwyw-col-deviation--zero {
+    color: #555;
+}
+
+th#wcpwyw_status {
+    width: 80px;
+}

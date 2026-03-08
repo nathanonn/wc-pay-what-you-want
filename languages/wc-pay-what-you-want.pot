@@ -1,0 +1,1482 @@
+# Copyright (C) 2026 Your Name
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Pay What You Want 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-plugin-wc-pwyw\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-02-26T10:04:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wc-pay-what-you-want\n"
+
+#. Plugin Name of the plugin
+#: wc-pay-what-you-want.php
+msgid "WC Pay What You Want"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wc-pay-what-you-want.php
+msgid "https://example.com/wc-pay-what-you-want"
+msgstr ""
+
+#. Description of the plugin
+#: wc-pay-what-you-want.php
+msgid "Lets customers set their own price for WooCommerce products within admin-defined boundaries."
+msgstr ""
+
+#. Author of the plugin
+#: wc-pay-what-you-want.php
+msgid "Your Name"
+msgstr ""
+
+#. Author URI of the plugin
+#: wc-pay-what-you-want.php
+msgid "https://example.com"
+msgstr ""
+
+#: inc/Activator.php:15
+msgid "WC Pay What You Want requires WooCommerce."
+msgstr ""
+
+#: inc/Activator.php:16
+msgid "Plugin Activation Error"
+msgstr ""
+
+#: inc/Admin/BulkActions.php:28
+#: inc/Admin/SettingsTab.php:194
+msgid "Enable Pay What You Want"
+msgstr ""
+
+#: inc/Admin/BulkActions.php:29
+msgid "Disable Pay What You Want"
+msgstr ""
+
+#: inc/Admin/BulkActions.php:74
+#: inc/Admin/BulkActions.php:79
+msgid "PWYW"
+msgstr ""
+
+#: inc/Admin/BulkActions.php:91
+#: inc/Admin/BulkActions.php:105
+msgid "PWYW Off"
+msgstr ""
+
+#: inc/Admin/BulkActions.php:103
+msgid "PWYW On"
+msgstr ""
+
+#: inc/Admin/BulkActions.php:135
+#, php-format
+msgid "Pay What You Want has been enabled for %d product."
+msgid_plural "Pay What You Want has been enabled for %d products."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Admin/BulkActions.php:146
+#, php-format
+msgid "Pay What You Want has been disabled for %d product."
+msgid_plural "Pay What You Want has been disabled for %d products."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Admin/Loader.php:135
+msgid "Total Revenue"
+msgstr ""
+
+#: inc/Admin/Loader.php:136
+msgid "Total Orders"
+msgstr ""
+
+#: inc/Admin/Loader.php:137
+msgid "Avg Customer Price"
+msgstr ""
+
+#: inc/Admin/Loader.php:138
+#, php-format
+msgid "Customers pay on average %s above suggested"
+msgstr ""
+
+#: inc/Admin/Loader.php:139
+#, php-format
+msgid "Customers pay on average %s below suggested"
+msgstr ""
+
+#: inc/Admin/Loader.php:140
+msgid "Price Distribution"
+msgstr ""
+
+#: inc/Admin/Loader.php:141
+msgid "Below min"
+msgstr ""
+
+#: inc/Admin/Loader.php:142
+msgid "&lt; Suggest"
+msgstr ""
+
+#: inc/Admin/Loader.php:143
+msgid "At suggest"
+msgstr ""
+
+#: inc/Admin/Loader.php:144
+msgid "&gt; Suggest"
+msgstr ""
+
+#: inc/Admin/Loader.php:145
+msgid "Top 5 Products by PWYW Revenue"
+msgstr ""
+
+#: inc/Admin/Loader.php:146
+#: inc/Analytics/AlertMailer.php:161
+msgid "Product"
+msgstr ""
+
+#: inc/Admin/Loader.php:147
+msgid "Revenue"
+msgstr ""
+
+#: inc/Admin/Loader.php:148
+msgid "Orders"
+msgstr ""
+
+#: inc/Admin/Loader.php:149
+msgid "Avg Price"
+msgstr ""
+
+#: inc/Admin/Loader.php:150
+msgid "Enable PWYW on your products to start collecting data."
+msgstr ""
+
+#: inc/Admin/Loader.php:151
+msgid "View Products"
+msgstr ""
+
+#: inc/Admin/Loader.php:152
+msgid "Unable to load analytics data. Please refresh the page."
+msgstr ""
+
+#: inc/Admin/Loader.php:153
+msgid "Retry"
+msgstr ""
+
+#: inc/Admin/OrderPanel.php:73
+msgid "Customer Price"
+msgstr ""
+
+#: inc/Admin/OrderPanel.php:81
+msgid "Suggested Price"
+msgstr ""
+
+#: inc/Admin/OrderPanel.php:89
+msgid "Variance"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:27
+#: inc/Admin/SettingsTab.php:30
+#: inc/Admin/VariationPanel.php:36
+#: inc/Frontend/CartHandler.php:390
+#: inc/Frontend/CartHandler.php:398
+msgid "Pay What You Want"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:68
+msgid "Enable PWYW"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:69
+msgid "Enable Pay What You Want for this product"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:79
+msgid "Allow $0 price"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:80
+msgid "Allow customers to enter $0 (completely free)"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:87
+msgid "This is a variable product. Min, max, suggested prices and preset buttons are configured per variation in the Variations tab below. Use the variation override panel to set per-variation pricing."
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:91
+#: inc/Admin/VariationPanel.php:75
+msgid "Minimum Price ($)"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:92
+#: inc/Admin/VariationPanel.php:76
+msgid "Maximum Price ($)"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:93
+#: inc/Admin/VariationPanel.php:77
+msgid "Suggested Price ($)"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:97
+#: inc/Admin/VariationPanel.php:97
+msgid "Preset Amounts ($)"
+msgstr ""
+
+#. translators: %s: default preset amounts
+#: inc/Admin/ProductPanel.php:101
+#, php-format
+msgid "Leave blank to use global: %s"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:110
+msgid "Display Style"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:113
+#: inc/Admin/ProductPanel.php:126
+msgid "— Use global default"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:114
+msgid "Style A — Input + Labels"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:115
+#: inc/Admin/SettingsTab.php:261
+msgid "Style B — Input + Preset Buttons"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:116
+#: inc/Admin/SettingsTab.php:262
+msgid "Style C — Input + Presets + Labels"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:117
+msgid "Style D — Minimal"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:123
+#: inc/Admin/SettingsTab.php:300
+msgid "Coupon Behaviour"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:127
+#: inc/Admin/SettingsTab.php:305
+msgid "Allow coupons (no floor)"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:128
+msgid "Allow with floor"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:129
+msgid "Block coupons"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:138
+msgid "PWYW is disabled for this product. Enable it above to configure pricing."
+msgstr ""
+
+#. translators: 1: formatted price, 2: percentage, 3: formatted regular price
+#: inc/Admin/ProductPanel.php:168
+#: inc/Admin/ProductPanel.php:189
+#, php-format
+msgid "Using global default: %1$s (%2$s%% of regular price %3$s)"
+msgstr ""
+
+#. translators: 1: formatted override price, 2: formatted global default price
+#: inc/Admin/ProductPanel.php:175
+#, php-format
+msgid "Override active: %1$s fixed (global default would be %2$s)"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:194
+msgid "Override active: (enter a value above to set a fixed price)"
+msgstr ""
+
+#: inc/Admin/ProductPanel.php:274
+msgid "PWYW Maximum Price must be greater than Minimum Price."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:44
+#: inc/Admin/SettingsTab.php:48
+msgid "PWYW is currently disabled. Settings are saved but no PWYW functionality will appear on the frontend until you enable it above."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:114
+msgid "Maximum percentage must be greater than minimum percentage."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:126
+msgid "Global Preset Amounts must be comma-separated positive numbers (e.g. 10,15,20,25) or left blank."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:139
+msgid "Below-threshold percentage must be a whole number between 1 and 999."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:150
+msgid "Above-threshold percentage must be a whole number between 1 and 999."
+msgstr ""
+
+#. translators: %s: invalid email address
+#: inc/Admin/SettingsTab.php:165
+#, php-format
+msgid "Recipient email address \"%s\" is not valid."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:180
+msgid "Maximum price cap must be a positive number."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:192
+msgid "General"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:198
+msgid "Enable the PWYW pricing feature globally"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:204
+msgid "Pricing Defaults"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:206
+msgid "Applies to all products unless overridden with a fixed $ amount on the product itself."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:210
+msgid "Default Minimum Price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:214
+#: inc/Admin/SettingsTab.php:222
+#: inc/Admin/SettingsTab.php:230
+msgid "% of regular price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:218
+msgid "Default Maximum Price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:226
+msgid "Default Suggested Price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:237
+msgid "Preset Quick-Select Buttons"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:239
+msgid "Comma-separated fixed amounts. Shown as buttons on the product page. Leave blank to hide preset buttons entirely."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:243
+msgid "Global Preset Amounts ($)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:253
+msgid "Display Settings"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:255
+msgid "Price Display Style"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:260
+msgid "Style A — Input + Labels (min/suggested/max)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:263
+msgid "Style D — Minimal (input only)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:267
+msgid "Archive Display Style"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:272
+msgid "Show price range (min – max)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:273
+msgid "Show suggested price only"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:274
+msgid "Show \"Name Your Price\""
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:278
+msgid "Quick-Add to Cart Default"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:283
+msgid "Pre-fill with suggested price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:284
+msgid "Pre-fill with minimum price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:285
+msgid "Block quick-add (require product page)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:291
+msgid "Cart & Coupon Settings"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:293
+msgid "Mixed Cart Restriction"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:297
+msgid "Prevent PWYW and fixed-price items in the same cart"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:306
+msgid "Allow coupons but floor at minimum price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:307
+msgid "Block all coupons on PWYW items"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:314
+msgid "Labels & Messages"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:316
+msgid "Customise customer-facing text. Use {amount} as a placeholder where a formatted price should appear."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:320
+msgid "Price Input Label"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:326
+msgid "Minimum Label"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:332
+msgid "Maximum Label"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:338
+msgid "Suggested Label"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:344
+msgid "Below Minimum Error"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:350
+msgid "Above Maximum Error"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:356
+msgid "Invalid Input Error"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:364
+msgid "Email Notifications"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:368
+msgid "Below-Threshold Alert"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:371
+msgid "Send an alert when a customer pays significantly below the suggested price."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:374
+msgid "Enable below-threshold alert"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:378
+msgid "Send an alert when a customer pays significantly below the suggested price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:382
+#: inc/Admin/SettingsTab.php:408
+msgid "Trigger threshold"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:386
+msgid "% below suggested price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:387
+msgid "Alert fires when: (suggested − customer) / suggested × 100 > this threshold"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:394
+msgid "Above-Threshold Alert"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:397
+msgid "Send an alert when a customer pays significantly above the suggested price."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:400
+msgid "Enable above-threshold alert"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:404
+msgid "Send an alert when a customer pays significantly above the suggested price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:412
+msgid "% above suggested price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:413
+msgid "Alert fires when: (customer − suggested) / suggested × 100 > this threshold"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:420
+msgid "Notification recipient"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:424
+msgid "Email address(es) for alerts. Leave blank to use the site admin email. Separate multiple addresses with commas."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:430
+msgid "Security"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:433
+msgid "Fraud prevention and server-side validation controls."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:436
+msgid "Enable maximum price cap"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:440
+msgid "Apply an absolute maximum price cap in addition to per-product maximums"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:444
+msgid "Absolute maximum price cap"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:448
+msgid "Any customer price above this amount is rejected server-side. Applies in addition to per-product maximums."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:453
+msgid "Log server-side validation failures"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:457
+msgid "Write rejected price attempts to wp-content/debug.log. Disable after debugging."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:487
+msgid "Server-side price validation on every add-to-cart and cart update"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:488
+msgid "Nonce verification on all AJAX requests and form submissions"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:489
+msgid "Input sanitisation — HTML stripped, non-numeric values rejected"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:490
+msgid "XSS prevention — all output escaped with esc_html() / wp_kses()"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:491
+msgid "SQL injection protection — all queries use $wpdb->prepare()"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:492
+msgid "Capability checks — settings require manage_woocommerce capability"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:495
+msgid "Always-active protections"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:504
+msgid "These protections are always active and cannot be disabled."
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:524
+msgid "Translation & Internationalisation"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:530
+msgid "Text domain"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:531
+msgid "POT file status"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:532
+msgid "Present"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:533
+msgid "Missing"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:534
+msgid "String count"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:535
+msgid "Active locale"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:536
+msgid "RTL active"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:537
+#: inc/Analytics/OrderColumns.php:77
+msgid "Yes"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:538
+#: inc/Analytics/OrderColumns.php:73
+msgid "No"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:551
+msgid "Download .pot file"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:559
+msgid "LTR preview"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:561
+#: inc/Admin/SettingsTab.php:569
+#: inc/Frontend/ProductPage.php:323
+#: templates/product-page-pwyw.php:74
+msgid "Name Your Price"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:567
+msgid "RTL preview"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:592
+msgid "Input field placeholder"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:593
+msgid "Minimum price label"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:594
+msgid "Maximum price label"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:595
+msgid "Suggested price label"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:596
+msgid "Preset button"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:597
+msgid "Cart line total"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:598
+msgid "Checkout summary"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:599
+msgid "Order history record"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:603
+msgid "Left (e.g. $25.00)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:604
+msgid "Right (e.g. 25.00$)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:605
+msgid "Left with space (e.g. $ 25.00)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:606
+msgid "Right with space (e.g. 25.00 $)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:610
+msgid "Currency Localisation"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:617
+msgid "Currency"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:618
+msgid "Symbol"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:619
+msgid "Position"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:620
+msgid "Decimal separator"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:621
+msgid "Thousands separator"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:621
+msgid "(none)"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:622
+msgid "Decimal places"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:631
+msgid "Price display preview"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:634
+msgid "Surface"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:635
+msgid "Amount"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:636
+msgid "Formatted"
+msgstr ""
+
+#: inc/Admin/SettingsTab.php:646
+msgid "All PWYW price outputs use wc_price() and automatically reflect your WooCommerce currency settings."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:62
+#: inc/Admin/UninstallPage.php:63
+msgid "Uninstall PWYW"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:75
+#: inc/Admin/UninstallPage.php:192
+msgid "You do not have permission to delete plugins."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:97
+msgid "Uninstall WC Pay What You Want"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:100
+msgid "Data currently stored by this plugin"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:104
+msgid "Plugin settings"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:105
+#, php-format
+msgid "%d option"
+msgid_plural "%d options"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Admin/UninstallPage.php:108
+msgid "PWYW-enabled products"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:109
+#, php-format
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Admin/UninstallPage.php:112
+msgid "Analytics rows"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:113
+#, php-format
+msgid "%d row"
+msgid_plural "%d rows"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Admin/UninstallPage.php:116
+msgid "Orders with PWYW data"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:117
+#, php-format
+msgid "%d order"
+msgid_plural "%d orders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Admin/UninstallPage.php:129
+msgid "What should happen to your data?"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:132
+msgid "Your PWYW settings, product meta, analytics history, and order records will be preserved in the database. You can re-activate the plugin at any time and your data will still be there."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:136
+msgid "Warning:"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:137
+msgid "The selected data will be permanently deleted. This action cannot be undone."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:143
+msgid "Keep all data"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:144
+msgid "Remove the plugin only. All settings, product meta, analytics, and order history remain in the database."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:151
+msgid "Delete plugin data"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:152
+msgid "Remove plugin and delete: settings, product meta, and analytics table."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:159
+msgid "Also delete order meta (PWYW price history in orders)"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:163
+msgid "Data that will be deleted:"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:165
+msgid "All wcpwyw_* option entries"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:166
+msgid "All _wcpwyw_* product meta keys"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:167
+msgid "wcpwyw_analytics database table"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:168
+msgid "All _wcpwyw_* order item meta"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:176
+msgid "Uninstall — keep all data"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:179
+msgid "Cancel"
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:198
+#: inc/Frontend/CartHandler.php:517
+msgid "Security check failed."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:224
+msgid "WC Pay What You Want has been uninstalled. Data kept: settings, product meta, analytics, and order history."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:230
+msgid "WC Pay What You Want has been uninstalled. Data deleted: all PWYW data including order history."
+msgstr ""
+
+#: inc/Admin/UninstallPage.php:236
+msgid "WC Pay What You Want has been uninstalled. Data deleted: settings and product meta. Order history preserved."
+msgstr ""
+
+#: inc/Admin/VariationPanel.php:40
+msgid "Inherit from parent product"
+msgstr ""
+
+#: inc/Admin/VariationPanel.php:41
+msgid "Enable PWYW for this variation"
+msgstr ""
+
+#: inc/Admin/VariationPanel.php:42
+msgid "Disable PWYW for this variation"
+msgstr ""
+
+#: inc/Admin/VariationPanel.php:46
+msgid "PWYW for this variation:"
+msgstr ""
+
+#: inc/Admin/VariationPanel.php:69
+msgid "Allow $0 for this variation"
+msgstr ""
+
+#: inc/Admin/VariationPanel.php:99
+msgid "Leave blank to use parent presets"
+msgstr ""
+
+#: inc/Admin/VariationPanel.php:107
+msgid "Inheriting parent product settings. Prices and behaviour are resolved at runtime from the parent product and global settings."
+msgstr ""
+
+#: inc/Admin/VariationPanel.php:111
+msgid "PWYW is disabled for this variation. It will display with its normal WooCommerce price instead of a PWYW input."
+msgstr ""
+
+#. translators: %s: WooCommerce order number
+#: inc/Analytics/AlertMailer.php:121
+#, php-format
+msgid "PWYW Alert: Customer paid below threshold — Order %s"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:122
+msgid "Pay What You Want — Below-threshold alert"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:123
+msgid "A customer's payment is significantly below the suggested price."
+msgstr ""
+
+#. translators: %d: threshold percentage
+#: inc/Analytics/AlertMailer.php:125
+#, php-format
+msgid "%d%% below suggested"
+msgstr ""
+
+#. translators: %s: WooCommerce order number
+#: inc/Analytics/AlertMailer.php:128
+#, php-format
+msgid "PWYW Alert: Customer paid above threshold — Order %s"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:129
+msgid "Pay What You Want — Above-threshold alert"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:130
+msgid "A customer's payment is significantly above the suggested price."
+msgstr ""
+
+#. translators: %d: threshold percentage
+#: inc/Analytics/AlertMailer.php:132
+#, php-format
+msgid "%d%% above suggested"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:147
+msgid "Order details"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:149
+msgid "Order"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:151
+msgid "Date"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:155
+msgid "Customer"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:159
+msgid "PWYW pricing summary"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:163
+msgid "Customer price"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:165
+msgid "Suggested price"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:166
+msgid "(at time of purchase)"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:167
+#: inc/Analytics/OrderColumns.php:37
+msgid "Deviation"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:172
+msgid "Threshold"
+msgstr ""
+
+#. translators: %s: WooCommerce order number
+#: inc/Analytics/AlertMailer.php:180
+#, php-format
+msgid "View Order %s in your store admin"
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:186
+msgid "You are receiving this email because PWYW price alerts are enabled."
+msgstr ""
+
+#: inc/Analytics/AlertMailer.php:188
+msgid "To change alert settings, go to WooCommerce → Settings → Pay What You Want."
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:27
+msgid "Pay What You Want — Overview"
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:55
+msgid "7 days"
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:56
+msgid "30 days"
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:57
+msgid "90 days"
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:58
+#: inc/Analytics/DashboardWidget.php:229
+msgid "All time"
+msgstr ""
+
+#. translators: %d: product ID
+#: inc/Analytics/DashboardWidget.php:211
+#, php-format
+msgid "Product #%d"
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:226
+msgid "Last 7 days"
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:227
+msgid "Last 30 days"
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:228
+msgid "Last 90 days"
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:233
+msgid "No PWYW orders in the last 7 days."
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:234
+msgid "No PWYW orders in the last 30 days."
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:235
+msgid "No PWYW orders in the last 90 days."
+msgstr ""
+
+#: inc/Analytics/DashboardWidget.php:236
+msgid "No PWYW orders yet."
+msgstr ""
+
+#: inc/Analytics/OrderColumns.php:34
+msgid "PWYW?"
+msgstr ""
+
+#: inc/Analytics/OrderColumns.php:35
+msgid "Cust. Price"
+msgstr ""
+
+#: inc/Analytics/OrderColumns.php:36
+msgid "Sugg. Price"
+msgstr ""
+
+#: inc/Analytics/OrderColumns.php:75
+msgid "This order contains both PWYW and regular products. Prices shown are for PWYW items only."
+msgstr ""
+
+#: inc/Analytics/OrderColumns.php:75
+msgid "Mixed"
+msgstr ""
+
+#: inc/Analytics/OrderExport.php:30
+msgid "PWYW Enabled"
+msgstr ""
+
+#: inc/Analytics/OrderExport.php:31
+msgid "PWYW Customer Price"
+msgstr ""
+
+#: inc/Analytics/OrderExport.php:32
+msgid "PWYW Suggested Price"
+msgstr ""
+
+#: inc/Analytics/OrderExport.php:33
+msgid "PWYW Difference"
+msgstr ""
+
+#: inc/Analytics/OrderExport.php:34
+msgid "PWYW Difference %"
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:80
+msgid "Your cart contains regular-priced items. Please complete your current purchase before adding Pay What You Want products."
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:88
+msgid "Your cart contains a Pay What You Want item. Please complete your current purchase before adding regular-priced products."
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:104
+msgid "Please visit the product page to set your price before adding this item to your cart."
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:131
+#: inc/Frontend/CartHandler.php:553
+#: inc/Frontend/Loader.php:73
+#: inc/Frontend/ProductPage.php:541
+msgid "Please enter a valid price."
+msgstr ""
+
+#. translators: %s: formatted minimum price
+#: inc/Frontend/CartHandler.php:144
+#: inc/Frontend/CartHandler.php:167
+#, php-format
+msgid "Please enter at least %s."
+msgstr ""
+
+#. translators: %s: formatted maximum price
+#. translators: %s: formatted maximum allowed price
+#: inc/Frontend/CartHandler.php:190
+#: inc/Frontend/CartHandler.php:215
+#, php-format
+msgid "Please enter no more than %s."
+msgstr ""
+
+#. translators: %s: formatted customer-chosen price
+#: inc/Frontend/CartHandler.php:393
+#, php-format
+msgid "Your chosen price: %s"
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:439
+#, php-format
+msgid "Pay between %1$s – %2$s"
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:446
+#, php-format
+msgid "Minimum: %s"
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:472
+msgid "Your price"
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:530
+msgid "Cart item not found."
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:543
+msgid "Not a PWYW product."
+msgstr ""
+
+#. translators: %s: formatted minimum price
+#: inc/Frontend/CartHandler.php:568
+#: inc/Frontend/CartHandler.php:583
+#: inc/Frontend/Loader.php:74
+#, php-format
+msgid "Min. price is %s."
+msgstr ""
+
+#. translators: %s: formatted maximum price
+#: inc/Frontend/CartHandler.php:598
+#: inc/Frontend/Loader.php:75
+#, php-format
+msgid "Max. price is %s."
+msgstr ""
+
+#: inc/Frontend/CartHandler.php:647
+msgid "View Product"
+msgstr ""
+
+#: inc/Frontend/Loader.php:76
+msgid "Could not update price. Please try again."
+msgstr ""
+
+#. translators: %s: formatted price
+#: inc/Frontend/ProductPage.php:252
+#, php-format
+msgid "Last time you paid: %s"
+msgstr ""
+
+#. translators: %s: formatted price
+#: inc/Frontend/ProductPage.php:260
+#, php-format
+msgid "Your previous price of %s is no longer available"
+msgstr ""
+
+#. translators: %s: formatted minimum price
+#: inc/Frontend/ProductPage.php:317
+#, php-format
+msgid "From %s"
+msgstr ""
+
+#: inc/Frontend/ProductPage.php:542
+msgid "Please enter at least {amount}."
+msgstr ""
+
+#: inc/Frontend/ProductPage.php:543
+msgid "Please enter no more than {amount}."
+msgstr ""
+
+#. translators: %s: coupon code
+#: inc/Services/CouponHandler.php:140
+#, php-format
+msgid "Coupon \"%s\" does not apply to Pay What You Want items. The discount has been applied to the remaining eligible items in your cart."
+msgstr ""
+
+#. translators: 1: product name, 2: formatted minimum price
+#: inc/Services/CouponHandler.php:170
+#, php-format
+msgid "The coupon discount on \"%1$s\" has been limited to maintain the minimum price of %2$s."
+msgstr ""
+
+#. translators: 1: min price (HTML), 2: max price (HTML)
+#: templates/product-page-pwyw.php:36
+#, php-format
+msgid "Pay between %1$s and %2$s"
+msgstr ""
+
+#. translators: %s: formatted price
+#: templates/product-page-pwyw.php:67
+#, php-format
+msgid "Regular price: %s"
+msgstr ""
+
+#. translators: %s: formatted suggested price
+#: templates/product-page-pwyw.php:80
+#, php-format
+msgid "Suggested: %s"
+msgstr ""
+
+#: templates/product-page-pwyw.php:90
+msgid "Quick select price"
+msgstr ""
+
+#: templates/product-page-pwyw.php:111
+msgid "Custom"
+msgstr ""
+
+#: wc-pay-what-you-want.php:98
+msgid "WC Pay What You Want — Missing Dependency"
+msgstr ""
+
+#: wc-pay-what-you-want.php:101
+msgid "WC Pay What You Want requires WooCommerce to be installed and active. Please install and activate WooCommerce, then re-activate this plugin."
+msgstr ""
+
+#: wc-pay-what-you-want.php:105
+msgid "Install WooCommerce"
+msgstr ""
+
+#: plugins/woocommerce/assets/client/blocks/coming-soon/block.json
+msgctxt "block title"
+msgid "Coming Soon"
+msgstr ""
+
+#: plugins/woocommerce/assets/client/blocks/mini-cart-contents/block.json
+msgctxt "block title"
+msgid "Mini-Cart Contents"
+msgstr ""
+
+#: plugins/woocommerce/assets/client/blocks/mini-cart-contents/block.json
+msgctxt "block description"
+msgid "Display a Mini-Cart widget."
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Arial"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Comic Sans MS"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Courier New"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Georgia"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Lucida"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Tahoma"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Times New Roman"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Trebuchet MS"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Verdana"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Arvo"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Lato"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Lora"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Merriweather"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Merriweather Sans"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Noticia Text"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Open Sans"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Playfair Display"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Source Sans Pro"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Oswald"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Raleway"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Permanent Marker"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Pacifico"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "small"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "medium"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "large"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "extra-large"
+msgstr ""
+
+#: plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "extra-extra-large"
+msgstr ""

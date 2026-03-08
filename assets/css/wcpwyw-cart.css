@@ -1,0 +1,110 @@
+/**
+ * WC Pay What You Want — Cart & Checkout Styles
+ *
+ * Styles for the in-cart editable price input, PWYW badge,
+ * boundary label, error states, loading state, and checkout badge.
+ */
+
+/* ── Cart: PWYW badge (below product name) ─────────────────────────────── */
+.wcpwyw-cart-badge {
+	display: inline-block;
+	font-size: 0.75em;
+	font-weight: 600;
+	padding: 2px 8px;
+	border-radius: 3px;
+	background: #f0f0f0;
+	color: #555;
+	margin-top: 4px;
+}
+
+/* ── Cart: editable price input wrapper ────────────────────────────────── */
+.wcpwyw-cart-price-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+/* Currency prefix + input on same row */
+.wcpwyw-cart-price-row {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+
+.wcpwyw-cart-currency {
+	font-size: 0.9em;
+	color: #444;
+}
+
+.wcpwyw-cart-price-input {
+	width: 7em;
+	padding: 4px 6px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1em;
+}
+
+/* Error state */
+.wcpwyw-cart-price-input--error {
+	border-color: #c00;
+	box-shadow: 0 0 0 1px #c00;
+}
+
+/* Inline error message */
+.wcpwyw-cart-error {
+	color: #c00;
+	font-size: 0.85em;
+	margin: 0;
+}
+
+/* Boundary label (e.g. "Pay between $10.00 – $50.00") */
+.wcpwyw-cart-boundary {
+	font-size: 0.8em;
+	color: #666;
+	margin: 0;
+}
+
+/* ── Loading state ──────────────────────────────────────────────────────── */
+.wcpwyw-cart-loading .wcpwyw-cart-price-input,
+.wcpwyw-cart-loading .wcpwyw-cart-boundary {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+/* ── Checkout: read-only PWYW badge ────────────────────────────────────── */
+.wcpwyw-checkout-badge {
+	display: block;
+	font-size: 0.8em;
+	color: #666;
+	margin-top: 3px;
+}
+
+/* ── Responsive: stacked WooCommerce cart (≤ 768px) ─────────────────────── */
+@media (max-width: 768px) {
+	.wcpwyw-cart-price-input {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.wcpwyw-cart-price-wrap {
+		width: 100%;
+	}
+
+	.wcpwyw-cart-badge {
+		display: block;
+		width: 100%;
+	}
+
+	.wcpwyw-cart-error,
+	.wcpwyw-cart-boundary {
+		width: 100%;
+		word-wrap: break-word;
+	}
+}
+
+/* ── Extra-narrow viewports (≤ 480px) ───────────────────────────────────── */
+@media (max-width: 480px) {
+	.wcpwyw-cart-badge {
+		font-size: 0.7em;
+	}
+}
