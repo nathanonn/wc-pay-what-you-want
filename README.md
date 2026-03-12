@@ -3,6 +3,10 @@
 A WooCommerce extension that lets customers set their own price within admin-defined boundaries. Supports simple, variable, virtual, and downloadable products.
 
 <p align="center">
+  <img src="screenshots/product-page.png" alt="Product Page with Pay-What-You-Want" width="600" />
+</p>
+
+<p align="center">
   <video src="screenshots/DemoVideo.mp4" width="700" controls></video>
 </p>
 
