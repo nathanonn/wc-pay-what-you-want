@@ -7,15 +7,11 @@ A WooCommerce extension that lets customers set their own price within admin-def
 </p>
 
 <p align="center">
-  <video src="screenshots/DemoVideo.mp4" width="700" controls></video>
+  <video src="https://github.com/user-attachments/assets/441791d5-dd8e-4bf5-8246-c3ed5c662e02" width="700" controls></video>
 </p>
 
 <p align="center">
-  <a href="https://tastewp.com/recipe/fbea1cfe67">
-    <img src="https://img.shields.io/badge/Try_Live_Demo-37a779?style=for-the-badge&logo=wordpress&logoColor=white" alt="Try Live Demo">
-  </a>
-  &nbsp;
-  <a href="https://github.com/nathanonn/wc-pay-what-you-want/releases/latest/download/wc-pay-what-you-want-latest.zip">
+  <a href="https://github.com/nathanonn/wc-pay-what-you-want/releases/latest/download/wc-pay-what-you-want-latest.zip" target="_blank">
     <img src="https://img.shields.io/badge/Download_Latest-2563eb?style=for-the-badge&logo=github&logoColor=white" alt="Download Latest">
   </a>
 </p>
@@ -25,6 +21,26 @@ A WooCommerce extension that lets customers set their own price within admin-def
 
 > [!IMPORTANT]
 > This plugin requires **WooCommerce** to be installed and active. It will display an admin notice and remain inactive without it.
+
+## 🚀 Try Live Demo
+
+Spin up a live WordPress environment with the plugin pre-installed — no setup required.
+
+<p align="left">
+  <a href="https://tastewp.com/recipe/fbea1cfe67" target="_blank">
+    <img src="https://img.shields.io/badge/Try_Live_Demo-37a779?style=for-the-badge&logo=wordpress&logoColor=white" alt="Try Live Demo">
+  </a>
+</p>
+
+Once the site is ready, log in to the WordPress admin using these credentials:
+
+| Field    | Value                          |
+| -------- | ------------------------------ |
+| Username | `admin`                        |
+| Password | `Dnft8Cz%S1G-9*A^p#CQ@-e`     |
+
+> [!NOTE]
+> TasteWP demo sites are temporary and will expire after a short period.
 
 ## Features
 
